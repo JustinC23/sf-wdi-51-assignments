@@ -126,16 +126,4 @@ var newList = $('<ul>');
   $('#items').append(newList);
 }
 
-// Clear our current shopping-items
-function clearShoppingItems() {
-  $('#items').empty();
-}
 
-// Add item to shopping cart
-function addItemToShoppingCart(category) {
-  $('#items ul').append(`
-    <li>
-      ${item}
-    </li>
-  `);
-}

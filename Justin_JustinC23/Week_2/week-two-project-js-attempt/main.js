@@ -92,9 +92,7 @@ document.getElementById("magazines").addEventListener("click", function(){
 });
 
 
-// Add shopping items to our page
 function addShoppingItems(category) {
-  // first, clear out all items I am currently showing
   clearShoppingItems();
 
   var myItems;
@@ -121,21 +119,21 @@ function addShoppingItems(category) {
   // newList.appendChild(listItem);
 
    var listItem = document.createElement("li");
-   listItem.textContent = myItems;
+   newList.innerHTML = myItems;
 
-  items.appendChild(listItem);
+  newList.appendChild(listItem);
+};
 
+// Clear our current shopping-items
+function clearShoppingItems() {
+  $('#shopping-items').empty();
 }
 
-
-//populate images
-
-    //add events to category buttons
-
-
-
-
-    // Add click handlers to each shopping item
-
-
-
+// Add item to shopping cart
+function addItemToShoppingCart(item) {
+  $('#shopping-cart ul').append(`
+    <li>
+      ${item}
+    </li>
+  `);
+}
