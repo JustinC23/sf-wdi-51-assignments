@@ -114,7 +114,8 @@ $('.yellow').fadeIn(500);
 // 2. When the button "Show Only Blue" is clicked, only show circles with the CLASS .blue should show
 $('#filterBlue').on('click', function () {
 	$('.circle').hide();
-	$('.blue').fadeIn(500);
+	$('.blue').fadeIn(5('li').siblings();
+00);
 });
 
 

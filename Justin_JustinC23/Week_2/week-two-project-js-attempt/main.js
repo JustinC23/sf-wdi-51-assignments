@@ -126,14 +126,6 @@ function addShoppingItems(category) {
 
 // Clear our current shopping-items
 function clearShoppingItems() {
-  $('#shopping-items').empty();
+  items = ();
 }
 
-// Add item to shopping cart
-function addItemToShoppingCart(item) {
-  $('#shopping-cart ul').append(`
-    <li>
-      ${item}
-    </li>
-  `);
-}
