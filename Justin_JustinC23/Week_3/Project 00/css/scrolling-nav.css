@@ -61,6 +61,35 @@ flex-inner {
   justify-content: space-between;
 }
 
+#testimonials{
+  width: 800px;
+  height: 200px;
+  padding: 10px;
+  background: #EBEBEB;
+  border-radius:12px;
+
+}
+
+#testimonials li{
+  display:none;
+  font-size: 30px;
+}
+#testimonials ul{
+  list-style:none;
+}
+#testimonials p.author{
+    color: #00ACEE;
+    font-size: 16px;
+    font-style: italic;
+    text-align: right;
+    margin:10px;
+}
+#testimonials p.author a,
+#testimonials p.author a:hover,
+#testimonials p.author a:visited{
+  color:#FF6400;
+}
+
 
 
 
