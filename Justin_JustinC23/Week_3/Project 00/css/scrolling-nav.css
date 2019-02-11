@@ -67,7 +67,6 @@ flex-inner {
   padding: 10px;
   background: #EBEBEB;
   border-radius:12px;
-
 }
 
 #testimonials li{
@@ -89,6 +88,9 @@ flex-inner {
 #testimonials p.author a:visited{
   color:#FF6400;
 }
+
+
+
 
 
 
