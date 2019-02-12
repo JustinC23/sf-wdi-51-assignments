@@ -8,6 +8,7 @@ section {
 
 h2 {
   text-align: center;
+  color: black;
 }
 
 .bg-primary text-white{
@@ -18,11 +19,17 @@ h2 {
   height: 300px;
 }
 
-.flex-outer li,
-.flex-inner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+/*when width of form =340px will stay on same row
+*/
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  border-radius: 2px;
 }
 
 .flex-outer > li > label,
@@ -36,18 +43,15 @@ h2 {
   flex: 1 0 220px;
 }
 
-.flex-outer li button {
-  margin-left: auto;
-  padding: 8px 16px;
-  border: none;
-  background: #333;
-  color: #f2f2f2;
-  text-transform: uppercase;
-  border-radius: 2px;
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 #contact {
   font-family: 'Lato', sans-serif;
-  background: #3AAFAB;
+  background: #4AAFAB;
   color: #fff;
   padding: 50px 0;
 }
@@ -90,10 +94,58 @@ flex-inner {
 }
 
 
+#lightbox {
+    position:fixed; /* making lightbox overlay trigger */
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: black;
+    text-align:center;
+}
+
+.container2 {
+  margin-top: 20px;
+}
+
+h2 {
+  color: #fff;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #db3a34;
+}
+
+
+.lightbox_trigger img {
+  max-height: auto;
+}
+
+.fa-html5 {
+  font-size: 100px;
+  color: blue;
+}
+
+.fa-react {
+  font-size: 100px;
+  color: blue;
+}
+
+.fa-js {
+  font-size: 100px;
+  color: blue;
+}
 
 
 
-
+@media only screen and (max-width: 450px) {
+  #testimonials {
+    width: 200px;
+    height: 200px;
+  }
+}
 
 
 
